@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <a href="" class="text">
+        <span>Nature</span>
+        <div class="derec"></div>
+    </a> -->
+    <a href="" class="text">
+        Nature
+    </a>
+    <style>
+        a.text {
+            text-decoration: none;
+            font-size: 32px;
+            position: relative;
+        }
+
+        a.text::after {
+            content: "";
+            width: 0;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: blue;
+            /* Đổi "color" thành "background" để tạo màu nền gạch chân */
+            transition: width 1s;
+            /* Thay đổi "color" thành "background" và chỉnh transition */
+        }
+
+        a.text:hover::after {
+            width: 100%;
+        }
+    </style>
+    <!-- <style>
+        a.text{
+            position: relative;
+            text-decoration: none;
+        }
+        a span{
+
+        }
+        a .derec{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: rgb(16, 19, 18);
+            opacity: 0;
+            transition: 1s;
+            
+        }
+        a.text:hover .derec{
+            opacity: 1;
+            width: 100%;
+        }
+    </style> -->
+</body>
+
+</html>

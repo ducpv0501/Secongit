@@ -1,0 +1,103 @@
+/* CSS */
+.product {
+    width: 297px;
+    height: 365px;
+    font-size: 13px;
+    color: #414141;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+  }
+  
+  .product .img-product {
+    width: 100%;
+    transition: 0.7s;
+    position: relative;
+  }
+  
+  .product .img-show {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .product .img-hover {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.7s;
+  }
+  .product:hover .img-hover{
+    width: 100%;
+    opacity: 1;
+  }
+  .product .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .content a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .product .add-to-cart {
+    width: 100%;
+    position: relative;
+    margin-top: -12px;
+    transition: 0.7s;
+  }
+  
+  .add-to-cart a {
+    text-decoration: none;
+  }
+  
+  .add-to-cart .category {
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .add-to-cart .add-to-cart-hover {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    text-decoration: none;
+    color: #000;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  
+  .add-to-cart .add-to-cart-hover::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #000;
+    top: 16px;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s ease, width 0.3s ease;
+  }
+  
+  .product .add-to-cart:hover .add-to-cart-hover {
+    opacity: 1;
+  }
+  .product .add-to-cart:hover .category {
+    opacity: 0;
+  }
+  
+  .product .add-to-cart .add-to-cart-hover:hover::before {
+    transform: scaleX(1);
+    transform-origin: right;
+    width: 22%;
+  }
+  
+
+
+

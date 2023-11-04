@@ -1,0 +1,55 @@
+.All {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.top {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    border: 1px solid red;
+    align-items: center;
+}
+
+.icon-left {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.icon-right {
+    margin-left: auto;
+    padding-right: 12px;
+}
+.content-container{
+    width: 100%;  
+  
+}
+.title{
+    margin-top:8px;
+    margin-left: 12px;
+}
+.content{   
+   
+    display: flex;
+    flex-wrap: wrap;   
+    padding: 12px;    
+    box-sizing: border-box;  
+}
+.item{ 
+    padding: 12px;   
+    display: block;   
+    text-align: center;
+}
+.item a{
+    display: block;
+    text-decoration: none;  
+    width: 60px;   
+}
+.item img{
+    border-radius: 4px;
+    width: 60px;
+}
+.item img:hover{
+    border-radius: 4px;
+    border: 2px solid rgb(20, 18, 18);
+    width: 62px;
+}

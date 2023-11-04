@@ -1,0 +1,28 @@
+.slew {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.slew .persion{
+   
+    width: 415px;
+    height: 233px;
+    max-width: 100%;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+   
+}
+.slew .bg-slew {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 123px;
+    left: 246px;
+    transition: 0.8s;
+    
+}
+.slew:hover .bg-slew {
+   transform: rotate(720deg);
+   opacity: 0;
+}

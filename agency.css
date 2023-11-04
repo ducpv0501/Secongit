@@ -1,0 +1,33 @@
+.img-blog{
+width: 300px;
+height: 300px;
+}
+.img-blog img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.white{
+    width: 250px;
+    height: 250px; 
+    padding: 12px;
+    overflow: hidden;  
+    background-color: brown;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: whitesmoke;
+    opacity: 0;
+    transition:  0.8s ;
+   
+}
+.img-blog:hover .white{
+    opacity: .7;
+}
+.text{
+   
+    margin-top: 150px;
+}
+.text a{
+    text-decoration: none;
+}

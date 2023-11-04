@@ -1,0 +1,66 @@
+.menu {
+    display: flex;
+    height: 48px;
+    width: 100%;
+    background-color: rgb(47, 161, 179);
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-item {
+    height: 100%;      
+    line-height: 48px; 
+    padding: 0 12px;
+    text-align: center;   
+    list-style: none;
+    text-transform: uppercase;      
+}
+
+.menu-item a {
+
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+    display: flex;
+}
+
+.radius {
+    height: 16px;   
+    text-decoration: none;
+    border-radius: 16px;
+    border: 1px solid white;
+    text-transform: inherit;
+    margin-left: 16px;
+    margin-right: 4px;
+}
+
+.radius a {
+   
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 16px;
+}
+
+.fa-bars {
+    color: white;
+}
+
+li:last-child {
+
+    margin-left: 200px;
+}
+
+li.menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-item.radius:hover {
+    background-color: #f0f0f0;
+    /* Màu nền khi hover */
+    border-radius: 50px;
+    /* Điều chỉnh độ cong của góc */
+
+}
